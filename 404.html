@@ -2,17 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>RavCom Community Council</title>
+  <title>Page Not Found - RavCom Community Council</title>
+  <meta name="description" content="Page not found. Return to RavCom Community Council homepage for community development and municipal assistance in South Africa.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+      text-align: center;
+      padding: 2rem;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      border-radius: 10px;
+      padding: 3rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+    }
+    .error-code {
+      font-size: 6rem;
+      font-weight: bold;
+      color: #667eea;
+      margin: 0;
+    }
+    h1 {
+      color: #333;
+      margin: 1rem 0;
+    }
+    .btn {
+      background: #667eea;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 10px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #764ba2;
+    }
+  </style>
   <script>
     // GitHub Pages hack to handle Angular routing
     // Store the current path and redirect to index.html with the path as a query parameter
     sessionStorage.redirect = location.href;
+    
+    // Redirect after 3 seconds if user doesn't click a link
+    setTimeout(function() {
+      window.location.href = '/';
+    }, 3000);
   </script>
-  <meta http-equiv="refresh" content="0;URL='/'">
 </head>
 <body>
-  <!-- GitHub Pages will serve this for any unknown route -->
+  <div class="container">
+    <div class="error-code">404</div>
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <p>You will be redirected to the homepage in 3 seconds, or you can:</p>
+    <a href="/" class="btn">Go to Homepage</a>
+    <a href="/#about" class="btn">Learn About Us</a>
+    <a href="/#services" class="btn">Our Services</a>
+    <a href="/#contact" class="btn">Contact Us</a>
+  </div>
 </body>
 </html>
