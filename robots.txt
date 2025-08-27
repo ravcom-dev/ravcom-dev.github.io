@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ravcomchamber.com/sitemap.xml
+
+# Allow search engines to crawl all content
+Allow: /home
+Allow: /library
+Allow: /privacy-policy
+
+# Block any admin or sensitive paths (none currently exist)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
