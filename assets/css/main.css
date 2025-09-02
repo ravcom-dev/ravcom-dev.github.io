@@ -789,11 +789,14 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
+# Optimize aos animation for mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
+  }
+  [data-aos] {
+    transition-duration: 300ms !important;
   }
 }
 
